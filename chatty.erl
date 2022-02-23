@@ -11,7 +11,7 @@ chatty_main() ->
     start_chatty_client().
 
 load_config() ->
-    io:format("In load config function~n").
+    chatty_config:load_config("./chatty.conf").
 
 start_chatty_server(Port) ->
     io:format("In start chatty server with port:~B~n", [Port]).
